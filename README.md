@@ -1,41 +1,67 @@
-# Getting Started with Create React App
+#Skip Selection App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Skip Selection App that allows users to choose a skip size from a list of available options. The app provides detailed information about each skip, including size, price per week, and availability for use on the road. It is built wih React and includes features like responsive design, dynamic data fetching, and visual feedback.
 
-## Available Scripts
 
-In the project directory, you can run:
+The following changes applied to this App:
 
-### `npm start`
+1. Design and UI/UX Improvements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Modern Aesthetics:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ Added a gradient background to the main container for a modern look.
+ Used consistent color schemes for text and buttons to improve visual appeal.
 
-### `npm test`
+Consistent Styling:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ Applied consistent paddling and margins for a cleaner layout.
+ Used uniform font sizes and styles for text elements to maintain visual consistency.
 
-### `npm run build`
+Visual Feedback:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ Implemented hover effects on skip cards to provide users with visual feedback.
+ Added clear visual cues for selected skip cards, helping users understand their selection.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Functionality Intact
+ 
+Selecting a Skip:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ Maintained the core functionality of selection a skip and displaying its details.
+ Used React's useState hook to manage the selected skip state.
 
-### `npm run eject`
+Error Handling:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ Added error handling to manage cases where the API fetch fails.
+ Displayed error messages to inform users when something goes wrong with the data fetch.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Responsiveness
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Media Queries:
+ 
+ Ensured the layout adapts to different screen sizes using CSS media queries.
+ Tested the application on various devices to ensure it looks good on both mobile and desktop
+ screens.
+
+Flexible Grid Layout:
+
+ Implemented a grid system that adjusts the number of columns based on the screen width,
+ ensuring a responsive design.
+
+Avoiding Overlaps:
+
+ Added padding to the bottom of the container to prevent the bottom bar from overlapping the 
+ last few skip options.
+
+4. Data Handling
+
+API Fetch:
+
+ Fetched skip data from the provided API endpoint.
+ Merged the fetched data with default data to ensure all necessary fields are present.
+
+Fallback  Data:
+
+ Used default skip data as a fallback in case the API fetch fails or the fetched data is incomplete.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
